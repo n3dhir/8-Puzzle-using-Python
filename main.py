@@ -14,7 +14,7 @@ class button():
   def draw(self,win):
     pygame.draw.rect(win, self.color, (self.x,self.y,self.width,self.height),0)
     if self.text != '':
-      font = pygame.font.SysFont('comicsans', 11)
+      font = pygame.font.SysFont('comicsans', 13)
       text = font.render(str(self.text), 1, (0,0,0))
       win.blit(text, (self.x + (self.width/2 - text.get_width()/2), self.y + (self.height/2 - text.get_height()/2)))
 
@@ -70,8 +70,8 @@ final = [1, 2, 3, 4, 5, 6, 7, 8, 0]
 # final = [1, 2, 3, 8, 0, 4, 7, 6, 5]
 
 
-initial = [0, 1, 2, 5, 6, 3, 4, 7, 8] #good one but not for dfs
-final = [1, 2, 3, 4, 5, 6, 7, 8, 0]
+# initial = [0, 1, 2, 5, 6, 3, 4, 7, 8]
+# final = [1, 2, 3, 4, 5, 6, 7, 8, 0]
 
 
 
@@ -87,7 +87,7 @@ final = [1, 2, 3, 4, 5, 6, 7, 8, 0]
 # final = [1, 2, 3, 4, 5, 6, 7, 8, 0]
 
 
-initial = [5, 2, 1, 3, 7, 0, 8, 6, 4]#there is a trick try 63 instead of 60
+initial = [5, 2, 1, 3, 7, 0, 8, 6, 4]#there is a trick, try 63 instead of 60 for profondeur limité go to line 419
 final = [0, 2, 1, 3, 7, 5, 8, 6, 4]
 
 
@@ -111,13 +111,14 @@ final = [0, 2, 1, 3, 7, 5, 8, 6, 4]
 # final = [2, 1, 0, 4, 6, 7, 3, 8, 5]
 
 
-# initial = [1, 2, 7, 8, 5, 0, 3, 6, 4]
-# final = [1, 2, 3, 8, 0, 4, 7, 6, 5]
+initial = [1, 2, 7, 8, 5, 0, 3, 6, 4]
+final = [1, 2, 3, 8, 0, 4, 7, 6, 5]
 taquin = copy.deepcopy(initial)
 
 
 
 def shuffle():
+  global taquin
   for i in range(100):
     x = random.randint(0, 8)
     y = random.randint(0, 8)
@@ -134,9 +135,6 @@ def reset(state = initial):
 
 def moves(pos):
   t = []
-  
-  
-  
   if(pos != 6 and pos != 7 and pos != 8):
     t.append(3)
   if(pos != 0 and pos != 1 and pos != 2):
@@ -228,7 +226,7 @@ def dfs():
   dfs_chemin.text = "+OO"
 
 
-
+#pour calculer l'heuristique
 def malplace(state):
   nb = 0
   for i in range(9):
