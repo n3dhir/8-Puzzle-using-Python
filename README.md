@@ -26,7 +26,7 @@
 
 ![Sans titre](https://user-images.githubusercontent.com/84473151/171178781-23294321-07eb-40c7-8048-61f12ef63a7e.png)
 
-#### 8. You can change the depth achievable by the Depth Limited algorithm
+#### 8. You can change the maximum depth achievable by the Depth Limited algorithm
       check line 419.
 
 #### 9. To change the speed of the cells, change the value of **latency** in the track function
