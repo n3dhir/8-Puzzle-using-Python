@@ -10,7 +10,7 @@
 
 #### 2. To run an algorithm, just click **BFS** , **DFS** , **A***, or **Depth Limited**  
 
-#### 3. You can click **RESET** to rest the board to the initial state  
+#### 3. You can click **RESET** to reset the board to the initial state  
 
 #### 4. You can click **SHUFFLE** to get a new random initial state  
  >sometimes you can get an impossible puzzle (a puzzle that has no solution).
