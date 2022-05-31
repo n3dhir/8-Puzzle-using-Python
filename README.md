@@ -13,7 +13,7 @@
 #### 3. You can click **RESET** to rest the board to the initial state  
 
 #### 4. You can click **SHUFFLE** to get a new random initial state  
- >sometimes you can get an impossible puzzle (a puzzle that has no solution)
+ >sometimes you can get an impossible puzzle (a puzzle that has no solution).
 #### 5. When an algorithm is running you should wait for it else the program will crash  
 
 ![image](https://user-images.githubusercontent.com/84473151/171176403-dea7d87b-8761-4155-8056-7227a0d45dd2.png)
@@ -26,12 +26,19 @@
 
 ![Sans titre](https://user-images.githubusercontent.com/84473151/171178781-23294321-07eb-40c7-8048-61f12ef63a7e.png)
 
-#### 8. To change the speed of the cells change the value of **latency** in the track function
- **250** milliseconds ![image](https://user-images.githubusercontent.com/84473151/171181930-f342b0b5-c132-4bcd-9b83-703da5154d6e.png)  
+#### 8. You can change the depth achievable by the Depth Limited algorithm
+      check line 419.
+
+#### 9. To change the speed of the cells, change the value of **latency** in the track function
+   **250** milliseconds ![image](https://user-images.githubusercontent.com/84473151/171181930-f342b0b5-c132-4bcd-9b83-703da5154d6e.png)  
  
- **0** milliseconds ![image](https://user-images.githubusercontent.com/84473151/171182377-8a80078b-e40d-4bed-a238-dbf5bce663b0.png)
+   **0** milliseconds ![image](https://user-images.githubusercontent.com/84473151/171182377-8a80078b-e40d-4bed-a238-dbf5bce663b0.png)
+
+   >A high latency means slow speed.  
+
+   >A low latency means high speed.
 
 ## Conclusion
- The **A*** algorithm is the best, it visits much less nodes than other algorithms
+ The **A*** algorithm is the best, it visits much less nodes than other algorithms.
  
  ![Sans titre](https://user-images.githubusercontent.com/84473151/171180418-880aba0f-a7b3-4b99-b3fd-765d13dfaab5.png)
