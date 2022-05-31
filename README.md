@@ -39,6 +39,6 @@
    >A low latency means high speed.
 
 ## Conclusion
- The **A*** algorithm is the best, it visits much less nodes than other algorithms.
+ The **A*** algorithm is the best, it visits much less nodes than the other algorithms.
  
  ![Sans titre](https://user-images.githubusercontent.com/84473151/171180418-880aba0f-a7b3-4b99-b3fd-765d13dfaab5.png)
