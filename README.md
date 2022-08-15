@@ -1,4 +1,4 @@
-# 8-Puzzle
+# 8-Puzzle-using-Python
 1. Download the zip file and extract it.
 2. Open **main.py** file.
 
